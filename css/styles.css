@@ -1,0 +1,266 @@
+body {
+    background-color: #202020;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    padding-top: 100px;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+.criar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #28a745;
+    color: white;
+    font-size: 36px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e6be0e;
+    color: white;
+    font-size: 36px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.NCArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.NCAreaP {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noncontent {
+    color: #797979;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 5em;
+    font-style: italic;
+}
+
+.botão-criar-NC {
+    background-color: #28a745;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#pts {
+    background-color: #141414;
+    color: #fff;
+    font-size: 30px;
+    padding: 15px 25px;
+    border: 2px solid #000;
+    border-radius: 7px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+#pts:hover {
+    opacity: 1;
+}
+
+#titM {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#missoes-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.miss-container {
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #0f0f0f;
+    border: 4px solid #000;
+    border-radius: 15px;
+}
+
+.miss-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #fff;
+}
+
+.miss-buttons {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.miss-complete {
+    background-color: #28a745;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.miss-exclude {
+    background-color: rgb(172, 7, 7);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+/*arquivo: criar_missão.html*/
+
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 70%;
+    margin: 50px;
+    background-color: #303030;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 25px;
+    border: 6px solid #000;
+    position: relative;
+}
+
+#criarForm {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#criarForm input, textarea, button {
+    width: 50%;
+    height: 50px;
+    resize: none;
+    margin: 15px 0;
+}
+
+#criarForm input, textarea {
+    background-color: #141414;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 5px;
+}
+
+#criarForm button {
+    width: 200px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#criarForm label, h1 {
+    color: #fff;
+}
+
+.voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(172, 7, 7);
+    border-radius: 10px;
+}
+
+/*arquivo: loja.html*/
+
+.criar-produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #043bb1;
+    color: white;
+    font-size: 36px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.missoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #28a745;
+    color: white;
+    font-size: 36px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

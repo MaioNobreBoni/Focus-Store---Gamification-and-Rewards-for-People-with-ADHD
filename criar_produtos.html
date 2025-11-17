@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Missão</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <a href="loja.html" class="voltar">voltar</a>
+            <h1>Criar Novo produto</h1>
+            <form id="criarForm">
+                <label for="titulo">Título do Produto:</label>
+                <input type="text" id="titulo" maxlength="37" required>
+
+                <label for="premio">Preço</label>
+                <input type="number" id="premio" min="1" required>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" maxlength="200" required></textarea>
+
+                <button type="submit" class="botãoCF">Criar Produto</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="js/criar_produtos.js"></script>
+</body>
+</html>
