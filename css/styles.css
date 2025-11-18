@@ -221,6 +221,25 @@ body {
     border-radius: 10px;
 }
 
+.radio-area {
+    display: flex;
+    flex-direction: column;
+}
+
+#labelRU {
+    display: flex;
+    align-items: center;
+}
+
+.mini-mission-active {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 25px;
+    height: 25px;
+    background-color: #ffd000;
+    border-radius: 50%;
+}
 /*arquivo: loja.html*/
 
 .criar-produtos {

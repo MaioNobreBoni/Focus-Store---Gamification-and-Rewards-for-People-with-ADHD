@@ -4,12 +4,13 @@ try {
 
     form.addEventListener("submit", (event) => {
         event.preventDefault();
+        const selecionado = document.querySelector("input[name='mini']:checked");
 
         const titulo = form.titulo.value;
         const premio = form.premio.value;
         const descricao = form.descricao.value;
-
-        const missao = {titulo, premio, descricao};
+        const valorCheck = selecionado.value;
+        const missao = {titulo, premio, descricao, valorCheck};
 
         const missoes = JSON.parse(localStorage.getItem("missoes")) || [];
 

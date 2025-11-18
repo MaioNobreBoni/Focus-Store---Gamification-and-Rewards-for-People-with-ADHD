@@ -12,6 +12,13 @@ if (raw) {
         localStorage.setItem("missoes", JSON.stringify(arrMissoes));
     }
 }
+
+arrMissoes.sort((a, b) => {
+    if (a.valorCheck == 'sim' && b.valorCheck != 'sim') return 1;
+    if (a.valorCheck != 'sim' && b.valorCheck == 'sim') return -1;
+    return 0;
+});
+
 const missArea = document.getElementById("missoes-area");
 const ptsLabel = document.getElementById("pts");
 ptsLabel.textContent = `Pontos: ${pts}`;
@@ -79,18 +86,31 @@ function criarQuest(mission, index) {
         missContainer.remove();
     })
 
+
+    if (mission["valorCheck"] == 'sim') {
+        const miniMissionActive = document.createElement('div');
+        miniMissionActive.classList.add("mini-mission-active");
+        missContainer.appendChild(miniMissionActive);
+        
+        missContainer.style.position = "relative";
+    }
+
     missComplete.addEventListener('click', () => {
         let numpts = Number(mission["premio"])
         pts += numpts;
 
         ptsLabel.textContent = `Pontos: ${pts}`;
-        arrMissoes.splice(index, 1);
         localStorage.setItem("pts", pts);
+
+        if (mission.valorCheck != 'sim') {
+        arrMissoes.splice(index, 1);
         localStorage.setItem("missoes", JSON.stringify(arrMissoes));
         missContainer.remove();
+    }
     })
-}
+    
 
+}
 arrMissoes.forEach((missao, index) => {
     criarQuest(missao, index);
 })
